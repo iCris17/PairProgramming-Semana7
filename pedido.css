@@ -1,0 +1,104 @@
+:root{
+    --global-font-size: 20px;
+    --global-family-font:'Times New Roman', Times, serif ;
+    --global--font-color: #9a9085;
+    --global--font-color-footer: #09b7af;
+    --global-gray-color: #e9e9e9;
+}
+
+html, body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--global-gray-color);
+    min-width: 450px;
+}
+
+body {
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: var(--global-font-size);
+    font-family: var(--global-family-font);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+p{
+    color: var(--global--font-color);
+}
+
+h1{
+    font-size: 58px;
+}
+
+.contenedor-pedido{
+    width: 80%;
+    min-height: 90%;
+    background-color: #fff;
+    padding: 2em 4em;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.confirmacion{
+    text-align: center;
+    padding-top: 1em;
+    border-top: solid var(--global-gray-color);
+    width: 100%;
+}
+
+.detalles-cliente, .detalles-compra, .total-compra{
+    padding: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid var(--global-gray-color);
+}
+
+.detalles-cliente div, .detalles-compra div{
+    margin-bottom: 0.6em;
+}
+
+span{
+    font-weight: bold;
+    color: var(--global--font-color-footer);
+}
+
+.aviso{
+    padding-top: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    h1{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .detalles-cliente, .detalles-compra {
+        flex-wrap: wrap;
+    }
+    .detalles-compra{
+        flex-direction: column;
+    }
+    .contenedor-pedido {
+        min-width: 450px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}

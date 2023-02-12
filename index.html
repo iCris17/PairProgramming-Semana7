@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="contenedor"> <!--REcordar quitar si no se usa-->
+        <form action="">
+            <section class="datosGenerales">
+                <div>
+                    <h1>Ingresa tu pedido</h1>    
+                </div>
+                <div class="datosCliente">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required/>
+                    </div>
+                    <div>
+                        <label for="direccion">Direccion:</label>
+                        <input type="text" name="direccion" id="direccion" required>
+                    </div>
+                </div>
+            </section>
+            <section class="datosPedido">
+                <div class="datosPedido--detalles">
+                    <div>
+                        <label for="talla">Tamaño:</label>
+                        <select name="talla" id="talla" class="datosPedido--detalles--number">
+                            <option value="CH">CH</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Color">Color:</label>
+                        <input type="radio" name="Color" value="Rojo" checked>Rojo
+                        <input type="radio" name="Color" value="Azul">Azul
+                    </div>
+                    <div>
+                        <label for="">Cantidad:</label>
+                        <input type="number" min="1" class="datosPedido--detalles--number" id="cantidad">
+                    </div>
+                </div>
+                <div class="datosPedido__logo">
+                    <div>
+                        <label for="logotipo">Selecciona el diseño que te agrada:</label>
+                    </div>
+                    <div class="datosPedido__logotipo">
+                        <div class="datosPedido__logo--columna">
+                            <input type="radio" name="logo" class="datosPedido__logo--radio" value="Camisa Roja" checked>
+                            <img src="assets/roja.png" alt="CamisaRoja" name="logo" class="datosPedido__img">
+                        </div>
+                        <div class="datosPedido__logo--columna">
+                            <input type="radio" name="logo" class="datosPedido__logo--radio" value="Camisa Azul">
+                            <img src="assets/azul.png" alt="CamisaAzul" name="logo" class="datosPedido__img">  
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            <div class="datosPedido__cierre">
+                <a href="pedido.html" id="enviarDatos" type="submit" value="Cerrar pedido" class="datosPedido__cierre-boton" onclick="cerrarPedido();" >Cerrar pedido</a>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

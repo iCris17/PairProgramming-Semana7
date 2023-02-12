@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedido.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-pedido">
+        <header>
+            <h1>¡ GRACIAS POR SU ORDEN !</h1>
+        </header>
+    
+        <div class="confirmacion">    
+            <h3>Enviaremos un correo de confirmación una vez que tu orden sea enviada</h3>
+        </div>
+        <div>
+            <div class="detalles-cliente">
+                <div>
+                    <div>
+                        <strong>Orden numero</strong>
+                        <p id="orden">445677</p>
+                    </div>
+                    <div>
+                        <strong>Forma de pago</strong>
+                        <p>VISA XXXXX1234</p>
+                    </div>
+                </div>
+                <div>
+                    <strong>Fecha de orden</strong>
+                    <p id="fecha">23 febrero 2023</p>
+                </div>
+                <div>
+                    <strong>Detalles de entrega</strong>
+                    <p id="nombre">Nombre</p>
+                    <p id="direccion">Direccion</p>
+                </div>
+            </div>
+            <div class="detalles-compra">
+                <div>
+                    <strong>Resumen de la orden:</strong>
+                    <p id="detalles">Playera mangas 3000, Logotipo tal, color tal</p>
+                </div>
+    
+                <div>
+                    <strong>Cantidad:</strong>
+                    <p id="cantidad">4</p>
+                </div>
+    
+                <div>
+                    <strong>Precio:</strong>
+                    <p>345$</p>
+                </div>
+            </div>
+            <div class="total-compra">
+                <strong>Total</strong>
+                <p id="total">345$</p>
+            </div>
+            <div class="aviso">
+                <p>AVISO: <span>No aceptamos devoluciones</span>, usted ha efectuado su compra exitosamente, pero también bajo su propio riesgo. <span>Vuelva pronto, que Dios le bendiga</span>.</p>
+            </div>
+        </div>
+    </div>
+    <script src="pedido.js"></script>
+</body>
+</html>
